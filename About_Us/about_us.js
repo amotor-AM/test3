@@ -8,6 +8,8 @@ function menuToggle() {
   nav.classList.toggle("active");
 }
 
+// Swiper code. We are using swiper.js. This code tells the swiper library what styling we want.
+
 var swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   grabCursor: true,

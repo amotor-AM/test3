@@ -11,7 +11,13 @@
          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
     <header>
+        
+        <!-- Clickable Logo. Navigates Home -->
+    <a href="https://test1-drab.vercel.app/landing_page.html">
         <img id="logo" src="/Water My Plants.png" alt="Logo">
+    </a>
+        
+        <!-- Hamburger Menu -->
         <div id="toggleIcon" onclick="menuToggle()"></div>
         <div id="menu-overlay">
             <ul>
@@ -38,16 +44,21 @@
         </div>
     </header>
     <body>
+
+        <!-- Header Image -->
         <section class="header">
         <div class="image">
-            <img src="about us.png">
+            <img src="about us.png" alt="About Us Image">
         </div>
         </section>
-    <div class="container">
+
+        <!-- Details Text -->
         <section class="details">
             <h2>Why were we created?</h2> 
             <p>In an ever increasingly connected world plant maintenence seems to be stuck in the middle ages. We set out to solve this. Through the use of our automated plant watering service we empower users to become plant experts. Our system does all the hard work for you. All you have to do is set up the app and we will do the rest. You will automatically be notified at the optimal watering times for each of your plants. At Water My Plants we believe everybody can become plant experts.</p>
         </section>
+
+        <!-- Swiper Menu -->
         <div class="swiper-holder">
             <h2>Meet The Team!</h2>
             <div class="swiper-container">
@@ -92,6 +103,7 @@
             </div>
         </div>
 
+        <!-- Contact Us Menu -->
         <section class="contact-us-link">
             <h2>Contact Us</h2>
             <p>If you would like to reach out to us please fill out a form using the link below.</p>
@@ -99,12 +111,13 @@
                 <button class="fade" type="submit">Contact Us</button>
             </form>
         </section>
-    </div>
 
-
+<!-- Linking Javascript -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="/about_us.js" async defer></script>
     </body>
+
+    <!-- footer -->
     <footer>
         <p>Copyright © Water my plants 2020</p>
         <ul>

@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Header Styling */
 header {
     width: 100%;
     height: 15vh;
@@ -29,6 +30,7 @@ a {
     height: 90%;
 }
 
+/* Hamburger Menu Styling */
 #menu-overlay {
     position: fixed;
     top: 0;
@@ -109,7 +111,7 @@ a {
     background: white url(/close.png);
 }
 
-
+/* Body Styling */
 body {
     background: #fff;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -119,16 +121,18 @@ body {
     padding: 0;
 }
 
+/* header Styling */
 .header {
     width: 100%;
     max-width: 100%;
+    height: auto;
     overflow: hidden;
-    padding-bottom: 10%;
+    padding-bottom: -10%;
 }
 
 .image {
     width: 100%;
-    height: 900px;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
@@ -141,13 +145,12 @@ body {
 .container {
     background: white;
     width: 100%;
-    z-index: 2;
 }
 
 .details {
     width: 80%;
     margin: 0 auto;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 h2 {
@@ -160,6 +163,7 @@ p {
     padding-bottom: 5%;
 }
 
+/* Swiper Styling */
 .swiper-holder {
     padding: 10vh 0 10vh 0;
 }
@@ -182,8 +186,8 @@ p {
     background-position: center;
     background-size: cover;
     background-color: white;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 
 .swiper-slide img {
@@ -216,6 +220,7 @@ p {
     padding-bottom: 10%;
 }
 
+/* Button Styling */
 .fade {
     background: #669966;
 
@@ -243,6 +248,7 @@ footer {
     padding-top: 1%;
 }
 
+/* Footer Styling */
 footer p {
     font-weight: bold;
     font-size: 1.25rem;
@@ -258,4 +264,34 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: #7db569;
+}
+
+/* Setting up our media queries */
+
+@media screen and (max-width: 500px) {
+    .swiper-slide {
+        width: 350px;
+        height: 350px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fade {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .swiper-slide {
+        width: 280px;
+        height: 280px;
+    }
+
+    .fade {
+        font-size: 1rem;
+    }
 }
